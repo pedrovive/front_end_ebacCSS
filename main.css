@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+/* Esse é o menu (que fica na parte de cima do site) */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Lista de seções de notícias da página */
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+/* cores da lista de seções de notícias */
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+/* centralizando elementos e dando as dimensões da página */
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/* Displaay: flex - deixa as coisas uma do lado da outra
+flex-wrap: wrap - */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 180px*/
+    width: 100%;
+}
+
+/* Aqui temos a largura de cada notícia par ter 3 nóticias por linha*/
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+/* Margem de cima e de baixo do título da manchete */
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+/* formatação padrão dos botões de ler mais */
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* tamanho do título da matéria */
+.articles article h3 {
+    font-size: 24px;
+}
+
+/* Tamanho da fonte do título das seções */
+section h2 {
+    font-size: 32px;
+}
+
+/* Cor do fundo da seção de esportes */
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* Cor do botão de ler mais e cor da fonte */
+#sports .articles article a {
+    background-color: #009432;
+    color: #000;
+}
+
+/* cor do fundo da seção de economia */
+#economy {
+    background-color: #f8f59f;
+}
+
+/* cor do botão de ler mais */
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+/* Arrumando o tamanho das imagens da seção de entreterimento */
+#entertainment .container img {
+    max-width: 696px;
+    max-height: 546px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+#entertainment{
+    background-color: #A9DFBF;
+}
+
+#entertainmet .articles article a {
+    background-color: #73C6B6;
+    color: #000;
+}
+
+#technology {
+    background-color: #F38168;
+}
+
+#technology .articles article a {
+    background-color: #F85D3C;
+    color: #fff;
+}
